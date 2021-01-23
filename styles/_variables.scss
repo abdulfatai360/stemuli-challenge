@@ -1,0 +1,43 @@
+:root {
+    /* Breakpoint variables */
+    --bp-small: 24.15;
+    --bp-large: 60.25;
+    --bp-xlarge: 75;
+
+    /* initial values ital */
+    --text-wght: 400;
+
+    /* Paragraph variables */
+    --p-line-height-min: 1.15;
+    --p-line-height-max: 1.5;
+    --p-font-size-min: 1;
+    --p-font-size-max: 1.25;
+    --p-vf-wght: var(--text-wght);
+
+    /* H1 variables */
+    --h1-line-height-min: 1.05;
+    --h1-line-height-max: 1.1;
+    --h1-font-size-min: 3;
+    --h1-font-size-max: 6;
+    --h1-vf-wght-multiplier-s: 0.33;
+    --h1-vf-wght-multiplier-m: 0.33;
+    --h1-vf-wght-multiplier-l: 0.33;
+
+    /* H2 variables */
+    --h2-line-height-min: 1.15;
+    --h2-line-height-max: 1.25;
+    --h2-font-size-min: 1.75;
+    --h2-font-size-max: 2.5;
+    --h2-vf-wght-multiplier-s: 1.25;
+    --h2-vf-wght-multiplier-m: 1.5;
+    --h2-vf-wght-multiplier-l: 1.75;
+
+    /* H3 variables */
+    --h3-line-height-min: 1.15;
+    --h3-line-height-max: 1.25;
+    --h3-font-size-min: 1.75;
+    --h3-font-size-max: 2.5;
+    --h3-vf-wght-multiplier-s: 0.5;
+    --h3-vf-wght-multiplier-m: 0.5;
+    --h3-vf-wght-multiplier-l: 0.5;
+}
