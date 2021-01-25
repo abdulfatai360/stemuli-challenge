@@ -1,0 +1,127 @@
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__welcome-msg {
+    order: 1;
+    padding: 1.5rem 2rem;
+}
+
+.header__welcome-msg > * {
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.5em;
+}
+
+.header__topbar {
+    /* border: 1px solid; */
+    box-shadow: inset 0px -1px 0px #e4e4e4;
+}
+
+.header__topbar__inner {
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+
+    column-gap: 1.75rem;
+}
+
+.header__topbar__inner > * {
+    flex-shrink: 0;
+}
+
+.header__topbar__notification {
+    font-size: 1rem;
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    position: relative;
+}
+
+.header__topbar__notification:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(227, 230, 236, 0.6);
+}
+
+.header__topbar__notification > span {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0.75rem;
+    height: 0.75rem;
+    font-size: 0;
+    border-radius: 50%;
+    background-color: #ff754c;
+}
+
+.header__topbar__notification__dropdown {
+    display: none;
+
+    position: fixed;
+    top: calc(1.5rem + 40px + 6px + 1.6rem);
+    right: 0;
+    width: 100%;
+}
+
+.header__topbar__notification--is-open {
+    color: #fff;
+    background-color: #6c5dd3;
+    box-shadow: 0 5px 10px rgba(227, 230, 236, 0.6);
+}
+
+.header__topbar__notification--is-open .header__topbar__notification__dropdown {
+    background-color: #fff;
+    display: block;
+    color: initial;
+}
+
+@media only screen and (min-width: 50rem) {
+    .header {
+        flex-direction: row;
+        padding: 2rem 0;
+    }
+
+    .header__welcome-msg {
+        order: 0;
+    }
+
+    .header__topbar {
+        flex-grow: 1;
+        box-shadow: none;
+    }
+
+    .header__topbar__burger {
+        display: none;
+    }
+
+    .header__topbar__notification > span {
+        top: -2px;
+        right: -7px;
+
+        min-width: 1.25rem;
+        height: 1.25rem;
+        font-size: 0.825rem;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .header__topbar__notification + div {
+        display: none !important;
+    }
+
+    .header__topbar__notification__dropdown {
+        width: 50%;
+        max-width: 400px;
+        right: 1rem;
+
+        top: calc(1.5rem + 40px + 6px + 1.6rem + 2rem);
+    }
+}

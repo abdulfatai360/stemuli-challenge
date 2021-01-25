@@ -1,0 +1,24 @@
+.btn {
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+
+    border: none;
+
+    background-color: transparent;
+    outline: none;
+
+    display: inline-block;
+    width: 100%;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn--purple {
+    color: #ffffff;
+    background-color: #6c5dd3;
+}
