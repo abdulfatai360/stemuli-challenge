@@ -26,7 +26,7 @@
     display: none;
 
     position: fixed;
-    top: calc(1.5rem + 40px + 6px + 1.6rem);
+    top: var(--header-height);
     left: 0;
     width: 100%;
 
@@ -60,8 +60,9 @@
 .search-form--is-rsearch-visible .search-form__dropdown {
     display: block;
     position: fixed;
-    top: calc(1.5rem + 40px + 6px + 1.6rem + 3.5rem);
+    top: calc(var(--header-height) + 3.5rem);
     left: 0;
+    z-index: 100;
 }
 
 @media only screen and (min-width: 50rem) {
@@ -82,7 +83,7 @@
         display: block;
 
         width: calc(100vw * 0.5);
-        max-width: 20rem;
+        max-width: 15rem;
 
         position: static;
         padding-left: 0.125rem;

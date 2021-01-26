@@ -9,7 +9,7 @@ function Button({
 }) {
     return (
         <button
-            className={['btn', className].join(' ')}
+            className={['button', className].join(' ')}
             type={type}
             disabled={disabled}
             onClick={onClick}

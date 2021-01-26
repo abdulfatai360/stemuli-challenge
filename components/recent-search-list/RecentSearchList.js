@@ -51,7 +51,7 @@ function RecentSearchList() {
                 </li>
             </ul>
 
-            <Button className="btn--purple">Advance Search</Button>
+            <Button className="button--purple">Advance Search</Button>
         </section>
     );
 }

@@ -1,16 +1,5 @@
-.dropdown-menu {
-    /* padding: 2rem 0.5rem; */
+.custom-dropdown-menu {
     border-radius: 1.5rem;
     box-shadow: 0 30px 30px rgba(27, 29, 33, 0.3);
     transition: all 0.25s;
-
-    min-height: 200px;
-}
-
-.dropdown-menu--white {
-    /* background-color: #fff; */
-}
-
-.dropdown-menu--purple {
-    /* background-color: #6c5dd3; */
 }

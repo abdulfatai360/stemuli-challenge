@@ -1,0 +1,79 @@
+.bg-pink {
+    background-color: var(--bg-pink);
+}
+
+.bg-pink-300 {
+    --bg-opacity: 0.3;
+    background-color: var(--bg-pink);
+}
+
+.bg-yellow {
+    background-color: var(--bg-yellow);
+}
+
+.bg-yellow-300 {
+    --bg-opacity: 0.3;
+    background-color: var(--bg-yellow);
+}
+
+.bg-blue {
+    background-color: var(--bg-blue);
+}
+
+.bg-blue-300 {
+    --bg-opacity: 0.3;
+    background-color: var(--bg-blue);
+}
+
+.color-primary {
+    color: var(--text-primary);
+}
+
+.color-green {
+    color: var(--text-green);
+}
+
+.color-secondary {
+    color: var(--text-secondary);
+}
+
+.color-tertiary {
+    color: var(--text-tertiary);
+}
+
+.color-purple {
+    color: #5f75ee;
+}
+
+.text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.fw-semibold {
+    font-weight: 600;
+}
