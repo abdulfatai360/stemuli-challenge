@@ -20,44 +20,52 @@ function Header() {
     }
 
     return (
-        <header className="header">
-            <div className="header__welcome-msg">
-                <p>Hi Dash UI8,</p>
-                <h1>Campaigns</h1>
+        <header className="header row">
+            <div className="col-12 col-lg-5 col-xl-7 order-1 order-lg-0">
+                <div className="header__welcome-msg">
+                    <p>Hi Dash UI8,</p>
+                    <h1>Campaigns</h1>
+                </div>
             </div>
 
-            <div className="header__topbar">
-                <div className="header__topbar__inner">
-                    <BurgerIcon
-                        role="button"
-                        className="header__topbar__burger"
-                    />
+            <div className="col-1 d-flex justify-content-center">
+                <div className="page-divider"></div>
+            </div>
 
-                    <SearchForm
-                        searchFormRef={searchFormRef}
-                        notificationRef={notificationRef}
-                    />
+            <div className="col-12 col-lg-6 col-xl-4">
+                <div className="header__topbar">
+                    <div className="header__topbar__inner">
+                        <BurgerIcon
+                            role="button"
+                            className="header__topbar__burger"
+                        />
 
-                    <span
-                        ref={notificationRef}
-                        role="button"
-                        className="header__topbar__notification"
-                        onClick={handleNotificationToggle}
-                    >
-                        <BellIcon />
-                        <span>2</span>
-                        <div className="header__topbar__notification__dropdown">
-                            <DropdownMenu>
-                                <RecentNotificationList />
-                            </DropdownMenu>
-                        </div>
-                    </span>
+                        <SearchForm
+                            searchFormRef={searchFormRef}
+                            notificationRef={notificationRef}
+                        />
 
-                    <Image
-                        width={40}
-                        height={40}
-                        src="/images/avatars/avatar-2.png"
-                    />
+                        <span
+                            ref={notificationRef}
+                            role="button"
+                            className="header__topbar__notification"
+                            onClick={handleNotificationToggle}
+                        >
+                            <BellIcon />
+                            <span>2</span>
+                            <div className="header__topbar__notification__dropdown">
+                                <DropdownMenu>
+                                    <RecentNotificationList />
+                                </DropdownMenu>
+                            </div>
+                        </span>
+
+                        <Image
+                            width={40}
+                            height={40}
+                            src="/images/avatars/avatar-2.png"
+                        />
+                    </div>
                 </div>
             </div>
         </header>

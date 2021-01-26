@@ -40,4 +40,15 @@
     --h3-vf-wght-multiplier-s: 0.5;
     --h3-vf-wght-multiplier-m: 0.5;
     --h3-vf-wght-multiplier-l: 0.5;
+
+    /* colors */
+    --bg-opacity: 1;
+    --bg-blue: rgba(63, 140, 255, var(--bg-opacity));
+    --bg-pink: rgba(255, 162, 192, var(--bg-opacity));
+    --bg-light-blue: rgba(160, 215, 231, var(--bg-opacity));
+    --bg-yellow: rgba(255, 206, 115, var(--bg-opacity));
+    --text-primary: rgba(17, 20, 45, 1);
+    --text-green: rgba(127, 186, 122, 1);
+    --text-secondary: rgba(128, 129, 145, 1);
+    --text-tertiary: rgba(178, 179, 189, 1);
 }

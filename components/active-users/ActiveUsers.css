@@ -1,0 +1,44 @@
+.active-users__stat {
+    border: 1px solid #e4e4e4;
+    border-radius: 1rem;
+}
+
+.active-users__stat__item {
+    border-color: #e4e4e4;
+}
+
+.active-users__progress {
+    margin-top: 0.5rem;
+    height: 2px;
+    background-color: #e4e4e4;
+    position: relative;
+}
+
+.active-users__progress::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+}
+
+.active-users__progress--users::before {
+    width: 50%;
+    background-color: #6c5dd3;
+}
+
+.active-users__progress--clicks::before {
+    width: 35%;
+    background-color: #ffa2c0;
+}
+
+.active-users__progress--sales::before {
+    width: 70%;
+    background-color: #7fba7a;
+}
+
+.active-users__progress--items::before {
+    width: 20%;
+    background-color: #ff9a7b;
+}

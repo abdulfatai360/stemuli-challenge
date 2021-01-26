@@ -1,4 +1,4 @@
-.btn {
+.button {
     padding: 1rem 4rem;
     border-radius: 1rem;
     font-size: 0.875rem;
@@ -14,11 +14,16 @@
     width: 100%;
 }
 
-.btn:hover {
+.button:hover {
     cursor: pointer;
 }
 
-.btn--purple {
+.button--secondary {
     color: #ffffff;
     background-color: #6c5dd3;
+}
+
+.button--primary {
+    color: #ffffff;
+    background-color: #1b1d21;
 }

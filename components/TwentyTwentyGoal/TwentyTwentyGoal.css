@@ -1,0 +1,36 @@
+.twenty-twenty-goal__progress {
+    height: 0.5rem;
+    background-color: #e4e4e4;
+    border-radius: 0.25rem;
+    position: relative;
+}
+
+.twenty-twenty-goal__progress::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0.25rem;
+
+    height: 100%;
+}
+
+.twenty-twenty-goal__progress__40::before {
+    width: 40%;
+    background-color: #6c5dd3;
+}
+
+.twenty-twenty-goal__progress__25::before {
+    width: 25%;
+    background-color: #7fba7a;
+}
+
+.twenty-twenty-goal__progress__50::before {
+    width: 50%;
+    background-color: #ffce73;
+}
+
+.twenty-twenty-goal__progress__80::before {
+    width: 80%;
+    background-color: #ff9a7b;
+}
