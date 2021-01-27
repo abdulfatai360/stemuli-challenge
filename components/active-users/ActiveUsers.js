@@ -252,7 +252,7 @@ function ActiveUsers() {
                         <ul className="active-users__stat__list row list-unstyled mb-0">
                             <li className="active-users__stat__item p-4 col-6 col-md">
                                 <p className="mb-3 fw-medium color-tertiary text-xs d-flex gap-2">
-                                    <div
+                                    <i
                                         style={{ width: 16, height: 16 }}
                                         className="rounded bg-purple d-flex align-items-center justify-content-center p-1 text-white"
                                     />
@@ -264,7 +264,7 @@ function ActiveUsers() {
 
                             <li className="active-users__stat__item p-4 col-6 col-md">
                                 <p className="mb-3 fw-medium color-tertiary text-xs d-flex gap-2">
-                                    <div
+                                    <i
                                         style={{ width: 16, height: 16 }}
                                         className="rounded bg-pink d-flex align-items-center justify-content-center p-1 text-white"
                                     />
@@ -276,7 +276,7 @@ function ActiveUsers() {
 
                             <li className="active-users__stat__item p-4 col-6 col-md">
                                 <p className="mb-3 fw-medium color-tertiary text-xs d-flex gap-2">
-                                    <div
+                                    <i
                                         style={{ width: 16, height: 16 }}
                                         className="rounded bg-blue d-flex align-items-center justify-content-center p-1 text-white"
                                     />
@@ -288,7 +288,7 @@ function ActiveUsers() {
 
                             <li className="active-users__stat__item p-4 col-6 col-md">
                                 <p className="mb-3 fw-medium color-tertiary text-xs d-flex gap-2">
-                                    <div
+                                    <i
                                         style={{ width: 16, height: 16 }}
                                         className="rounded bg-yellow d-flex align-items-center justify-content-center p-1 text-white"
                                     />
