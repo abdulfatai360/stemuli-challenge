@@ -40,11 +40,11 @@ function Main() {
 
             <div className="col-12 col-xxl-4">
                 <div className="row">
-                    <div className="col-12 col-md-6 col-xl-12 order-md-4">
+                    <div className="col-12 col-md-6 col-xxl-12 order-md-4">
                         <TwentyTwentyGoal />
                     </div>
 
-                    <div className="col-12 col-md-6 col-xl-12 order-md-5">
+                    <div className="col-12 col-md-6 col-xxl-12 order-md-5">
                         <AffiliateImpressions />
                     </div>
                 </div>

@@ -163,18 +163,19 @@ const barChart = {
 function ActiveUsers() {
     return (
         <section className="page-widget active-users">
-            <h2 className="text-lg mb-2">Active Users Right Now 💡</h2>
+            <h2 className="text-lg mb-4">Active Users Right Now 💡</h2>
 
             <div className="row">
-                <div className="col-12 col-md-4 mb-3">
+                <div className="col-12 col-md-3 mb-3">
                     <div className="row">
-                        <div className="col col-md-12 mb-4">
+                        <div className="col col-md-12 pb-4 border-bottom-sm-scr">
                             <h2
                                 className="m-0 mb-1 fw-semibold"
                                 style={{ fontSize: '3.5rem' }}
                             >
                                 478
                             </h2>
+
                             <div className="d-flex align-items-center gap-3">
                                 <Image
                                     width={32}
@@ -190,7 +191,7 @@ function ActiveUsers() {
                             </div>
                         </div>
 
-                        <div className="col col-md-9">
+                        <div className="col col-md-8 pt-4">
                             <div style={{ height: 75 }}>
                                 <Chart {...lineChart} />
                             </div>
@@ -200,7 +201,7 @@ function ActiveUsers() {
                             </p>
                         </div>
 
-                        <div className="col-2 d-flex align-self-start gap-1">
+                        <div className="col-2 py-4 d-flex align-self-start gap-1">
                             <div
                                 style={{
                                     backgroundColor: '#3F8CFF',
@@ -221,13 +222,13 @@ function ActiveUsers() {
                     </div>
                 </div>
 
-                <div className="col-12 col-md-8 mb-3">
+                <div className="col-12 col-md-9 mb-3">
                     <div
                         className="p-2 position-relative"
                         style={{
                             backgroundColor: '#3F8CFF',
                             borderRadius: '1rem',
-                            height: 200,
+                            height: '100%',
                         }}
                     >
                         <Chart {...barChart} />
@@ -250,7 +251,11 @@ function ActiveUsers() {
                     <div className="active-users__stat px-3 mt-4">
                         <ul className="active-users__stat__list row list-unstyled mb-0">
                             <li className="active-users__stat__item p-4 col-6 col-md">
-                                <p className="mb-3 fw-medium color-tertiary text-xs">
+                                <p className="mb-3 fw-medium color-tertiary text-xs d-flex gap-2">
+                                    <div
+                                        style={{ width: 16, height: 16 }}
+                                        className="rounded bg-purple d-flex align-items-center justify-content-center p-1 text-white"
+                                    ></div>
                                     Users
                                 </p>
                                 <h3 className="fw-semibold">36k</h3>
@@ -258,7 +263,11 @@ function ActiveUsers() {
                             </li>
 
                             <li className="active-users__stat__item p-4 col-6 col-md">
-                                <p className="mb-3 fw-medium color-tertiary text-xs">
+                                <p className="mb-3 fw-medium color-tertiary text-xs d-flex gap-2">
+                                    <div
+                                        style={{ width: 16, height: 16 }}
+                                        className="rounded bg-pink d-flex align-items-center justify-content-center p-1 text-white"
+                                    ></div>
                                     Clicks
                                 </p>
                                 <h3 className="fw-semibold">1m</h3>
@@ -266,7 +275,11 @@ function ActiveUsers() {
                             </li>
 
                             <li className="active-users__stat__item p-4 col-6 col-md">
-                                <p className="mb-3 fw-medium color-tertiary text-xs">
+                                <p className="mb-3 fw-medium color-tertiary text-xs d-flex gap-2">
+                                    <div
+                                        style={{ width: 16, height: 16 }}
+                                        className="rounded bg-blue d-flex align-items-center justify-content-center p-1 text-white"
+                                    ></div>
                                     Sales
                                 </p>
                                 <h3 className="fw-semibold">327$</h3>
@@ -274,7 +287,11 @@ function ActiveUsers() {
                             </li>
 
                             <li className="active-users__stat__item p-4 col-6 col-md">
-                                <p className="mb-3 fw-medium color-tertiary text-xs">
+                                <p className="mb-3 fw-medium color-tertiary text-xs d-flex gap-2">
+                                    <div
+                                        style={{ width: 16, height: 16 }}
+                                        className="rounded bg-yellow d-flex align-items-center justify-content-center p-1 text-white"
+                                    ></div>
                                     Items
                                 </p>
                                 <h3 className="fw-semibold">68</h3>
