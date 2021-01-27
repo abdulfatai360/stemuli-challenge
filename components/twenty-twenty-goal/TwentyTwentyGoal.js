@@ -1,3 +1,4 @@
+import Carousel from '../../components/carousel/Carousel';
 import './TwentyTwentyGoal.css';
 
 function TwentyTwentyGoal() {
@@ -5,7 +6,9 @@ function TwentyTwentyGoal() {
         <section className="page-widget twenty-twenty-goal">
             <h2 className="text-lg mb-2">2020 Goal</h2>
 
-            <div></div>
+            <div className="my-5">
+                <Carousel />
+            </div>
 
             <div className="mb-4">
                 <p className="mb-2 fw-semibold text-base d-flex justify-content-between">

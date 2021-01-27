@@ -2,4 +2,6 @@
     border-radius: 1.5rem;
     box-shadow: 0 30px 30px rgba(27, 29, 33, 0.3);
     transition: all 0.25s;
+    background-color: #fff;
+    padding: 1rem 0.5rem;
 }

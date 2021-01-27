@@ -1,14 +1,10 @@
 import Image from 'next/image';
-import Chart, { defaultOptions } from '../../libs/chart';
+import Chart, { colors, defaultOptions } from '../../libs/chart';
 import ArrowDownIcon from '../../public/images/icons/bordered-arrow-down.svg';
 import CloseIcon from '../../public/images/icons/close.svg';
 import './ActiveUsers.css';
 
-var purple = '#6C5DD3';
-var white = '#ffffff';
-var borderColor = '#E4E4E4';
-
-const activeUserGraphChartData = {
+const lineChart = {
     type: 'line',
     height: '100%',
     series: [
@@ -19,7 +15,7 @@ const activeUserGraphChartData = {
     ],
     options: {
         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
-        colors: [purple],
+        colors: [colors.purple],
         chart: {
             toolbar: {
                 show: false,
@@ -29,7 +25,7 @@ const activeUserGraphChartData = {
             },
         },
         grid: {
-            borderColor: borderColor,
+            borderColor: colors.lightgray,
             strokeDashArray: 0,
             xaxis: {
                 lines: {
@@ -67,7 +63,7 @@ const activeUserGraphChartData = {
     ...defaultOptions,
 };
 
-const activeUserStackedGraphData = {
+const barChart = {
     height: '100%',
     type: 'bar',
     series: [
@@ -82,7 +78,7 @@ const activeUserStackedGraphData = {
     ],
     options: {
         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'Jul'],
-        colors: [white, borderColor],
+        colors: [colors.white, colors.lightgray],
         chart: {
             stacked: true,
             toolbar: {
@@ -90,7 +86,7 @@ const activeUserStackedGraphData = {
             },
         },
         grid: {
-            borderColor: borderColor,
+            borderColor: colors.lightgray,
             strokeDashArray: 0,
             xaxis: {
                 lines: {
@@ -146,7 +142,7 @@ const activeUserStackedGraphData = {
         },
         yaxis: {
             axisBorder: {
-                color: borderColor,
+                color: colors.lightgray,
             },
             axisTicks: {
                 show: false,
@@ -156,7 +152,7 @@ const activeUserStackedGraphData = {
             },
             labels: {
                 style: {
-                    colors: white,
+                    colors: colors.white,
                 },
             },
         },
@@ -196,7 +192,7 @@ function ActiveUsers() {
 
                         <div className="col col-md-9">
                             <div style={{ height: 75 }}>
-                                <Chart {...activeUserGraphChartData} />
+                                <Chart {...lineChart} />
                             </div>
 
                             <p className="text-xs color-tertiary">
@@ -234,7 +230,7 @@ function ActiveUsers() {
                             height: 200,
                         }}
                     >
-                        <Chart {...activeUserStackedGraphData} />
+                        <Chart {...barChart} />
                         <div
                             className="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute"
                             style={{
@@ -253,7 +249,7 @@ function ActiveUsers() {
                 <div className="col-12">
                     <div className="active-users__stat px-3 mt-4">
                         <ul className="active-users__stat__list row list-unstyled mb-0">
-                            <li className="active-users__stat__item p-4 col-6 col-md border-bottom border-bottom-md-0 border-end">
+                            <li className="active-users__stat__item p-4 col-6 col-md">
                                 <p className="mb-3 fw-medium color-tertiary text-xs">
                                     Users
                                 </p>
@@ -261,7 +257,7 @@ function ActiveUsers() {
                                 <div className="active-users__progress active-users__progress--users"></div>
                             </li>
 
-                            <li className="active-users__stat__item p-4 col-6 col-md border-bottom border-bottom-md-0">
+                            <li className="active-users__stat__item p-4 col-6 col-md">
                                 <p className="mb-3 fw-medium color-tertiary text-xs">
                                     Clicks
                                 </p>
@@ -269,7 +265,7 @@ function ActiveUsers() {
                                 <div className="active-users__progress active-users__progress--clicks"></div>
                             </li>
 
-                            <li className="active-users__stat__item p-4 col-6 col-md border-end">
+                            <li className="active-users__stat__item p-4 col-6 col-md">
                                 <p className="mb-3 fw-medium color-tertiary text-xs">
                                     Sales
                                 </p>

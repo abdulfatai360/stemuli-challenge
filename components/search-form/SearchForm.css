@@ -26,9 +26,10 @@
     display: none;
 
     position: fixed;
-    top: var(--header-height);
+    top: var(--topbar-height);
+    right: 0;
     left: 0;
-    width: 100%;
+    width: 97%;
 
     border: none;
     padding: 0.25rem 1rem;
@@ -63,9 +64,10 @@
     top: calc(var(--header-height) + 3.5rem);
     left: 0;
     z-index: 100;
+    background-color: transparent;
 }
 
-@media only screen and (min-width: 50rem) {
+@media only screen and (min-width: 768px) {
     .search-form {
         display: flex;
     }
