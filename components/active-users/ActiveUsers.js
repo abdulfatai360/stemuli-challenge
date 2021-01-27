@@ -252,10 +252,10 @@ function ActiveUsers() {
                         <ul className="active-users__stat__list row list-unstyled mb-0">
                             <li className="active-users__stat__item p-4 col-6 col-md">
                                 <p className="mb-3 fw-medium color-tertiary text-xs d-flex gap-2">
-                                    <div
+                                    <i
                                         style={{ width: 16, height: 16 }}
                                         className="rounded bg-purple d-flex align-items-center justify-content-center p-1 text-white"
-                                    ></div>
+                                    />
                                     Users
                                 </p>
                                 <h3 className="fw-semibold">36k</h3>
@@ -264,10 +264,10 @@ function ActiveUsers() {
 
                             <li className="active-users__stat__item p-4 col-6 col-md">
                                 <p className="mb-3 fw-medium color-tertiary text-xs d-flex gap-2">
-                                    <div
+                                    <i
                                         style={{ width: 16, height: 16 }}
                                         className="rounded bg-pink d-flex align-items-center justify-content-center p-1 text-white"
-                                    ></div>
+                                    />
                                     Clicks
                                 </p>
                                 <h3 className="fw-semibold">1m</h3>
@@ -276,10 +276,10 @@ function ActiveUsers() {
 
                             <li className="active-users__stat__item p-4 col-6 col-md">
                                 <p className="mb-3 fw-medium color-tertiary text-xs d-flex gap-2">
-                                    <div
+                                    <i
                                         style={{ width: 16, height: 16 }}
                                         className="rounded bg-blue d-flex align-items-center justify-content-center p-1 text-white"
-                                    ></div>
+                                    />
                                     Sales
                                 </p>
                                 <h3 className="fw-semibold">327$</h3>
@@ -288,10 +288,10 @@ function ActiveUsers() {
 
                             <li className="active-users__stat__item p-4 col-6 col-md">
                                 <p className="mb-3 fw-medium color-tertiary text-xs d-flex gap-2">
-                                    <div
+                                    <i
                                         style={{ width: 16, height: 16 }}
                                         className="rounded bg-yellow d-flex align-items-center justify-content-center p-1 text-white"
-                                    ></div>
+                                    />
                                     Items
                                 </p>
                                 <h3 className="fw-semibold">68</h3>
