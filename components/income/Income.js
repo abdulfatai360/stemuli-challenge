@@ -1,11 +1,9 @@
-import Chart, { defaultOptions } from '../../libs/chart';
+import Chart, { colors, defaultOptions } from '../../libs/chart';
 import Button from '../button/Button';
 
-var blue = '#A0D7E7';
-var purple = '#6C5DD3';
-var borderColor = '#E4E4E4';
+const { blue, purple, lightgray } = colors;
 
-const incomeChartData = {
+const chartData = {
     height: '100%',
     type: 'bar',
     series: [
@@ -35,7 +33,7 @@ const incomeChartData = {
             },
         },
         grid: {
-            borderColor: borderColor,
+            borderColor: lightgray,
             strokeDashArray: 0,
             xaxis: {
                 lines: {
@@ -74,7 +72,7 @@ const incomeChartData = {
         xaxis: {
             axisBorder: {
                 show: false,
-                color: borderColor,
+                color: lightgray,
             },
             axisTicks: {
                 show: false,
@@ -97,7 +95,7 @@ function Income() {
                 style={{ borderRadius: '1rem' }}
             >
                 <div style={{ height: 200 }}>
-                    <Chart {...incomeChartData} />
+                    <Chart {...chartData} />
                 </div>
 
                 <Button className="button--primary mt-3">

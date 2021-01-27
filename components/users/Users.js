@@ -1,10 +1,8 @@
-import Chart, { defaultOptions } from '../../libs/chart';
+import Chart, { colors, defaultOptions } from '../../libs/chart';
 
-var blue = '#A0D7E7';
-var purple = '#6C5DD3';
-var borderColor = '#E4E4E4';
+const { blue, purple, lightgray } = colors;
 
-const totalUserChartData = {
+const totalUsersChart = {
     height: '100%',
     type: 'bar',
     series: [
@@ -25,7 +23,7 @@ const totalUserChartData = {
             },
         },
         grid: {
-            borderColor: borderColor,
+            borderColor: lightgray,
             strokeDashArray: 0,
             xaxis: {
                 lines: {
@@ -58,7 +56,7 @@ const totalUserChartData = {
         xaxis: {
             axisBorder: {
                 show: false,
-                color: borderColor,
+                color: lightgray,
             },
             axisTicks: {
                 show: false,
@@ -71,7 +69,7 @@ const totalUserChartData = {
     },
 };
 
-const newUserChartData = {
+const newUserChart = {
     type: 'bar',
     height: '100%',
     series: [
@@ -92,7 +90,7 @@ const newUserChartData = {
             },
         },
         grid: {
-            borderColor: borderColor,
+            borderColor: lightgray,
             strokeDashArray: 0,
             xaxis: {
                 lines: {
@@ -125,7 +123,7 @@ const newUserChartData = {
         xaxis: {
             axisBorder: {
                 show: false,
-                color: borderColor,
+                color: lightgray,
             },
             axisTicks: {
                 show: false,
@@ -153,7 +151,7 @@ function Users() {
                 </div>
 
                 <div style={{ width: 120, height: 80 }}>
-                    <Chart {...totalUserChartData} />
+                    <Chart {...totalUsersChart} />
                 </div>
             </section>
 
@@ -167,7 +165,7 @@ function Users() {
                 </div>
 
                 <div style={{ width: 120, height: 80 }}>
-                    <Chart {...newUserChartData} />
+                    <Chart {...newUserChart} />
                 </div>
             </section>
 

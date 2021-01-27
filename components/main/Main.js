@@ -3,14 +3,14 @@ import Income from '../income/Income';
 import ActiveUsers from '../active-users/ActiveUsers';
 import LatestSales from '../latest-sales/LatestSales';
 import IconProgress from '../icon-progress/IconProgress';
-import TwentyTwentyGoal from '../TwentyTwentyGoal/TwentyTwentyGoal';
+import TwentyTwentyGoal from '../twenty-twenty-goal/TwentyTwentyGoal';
 import AffiliateImpressions from '../affiliate-impressions/AffiliateImpressions';
 import './Main.css';
 
 function Main() {
     return (
-        <main className="main row">
-            <div className="col-12 col-xl-7">
+        <main className="main row px-2">
+            <div className="col-12 col-xxl-7">
                 <div className="row">
                     <div className="col-12">
                         <ActiveUsers />
@@ -38,7 +38,7 @@ function Main() {
                 <div className="page-divider"></div>
             </div>
 
-            <div className="col-12 col-xl-4">
+            <div className="col-12 col-xxl-4">
                 <div className="row">
                     <div className="col-12 col-md-6 col-xl-12 order-md-4">
                         <TwentyTwentyGoal />

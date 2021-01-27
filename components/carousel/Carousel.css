@@ -1,0 +1,46 @@
+.carousel__controls {
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px #e3e6ec;
+    cursor: pointer;
+
+    position: absolute;
+    top: 5rem;
+}
+
+.carousel__controls:hover {
+    box-shadow: none;
+}
+
+.carousel__controls__next {
+    left: 5rem;
+}
+
+.carousel-items {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    font-size: 0;
+}
+
+.carousel-items > img {
+    position: relative;
+    z-index: 2;
+    max-height: 100%;
+}
+
+.carousel-items > div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    border-radius: 16px;
+}

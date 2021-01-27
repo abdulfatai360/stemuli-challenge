@@ -1,5 +1,5 @@
 .button {
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
     border-radius: 1rem;
     font-size: 0.875rem;
     font-family: 'Inter', sans-serif;
@@ -23,7 +23,21 @@
     background-color: #6c5dd3;
 }
 
+.button--secondary:hover {
+    background-color: #5a49ce;
+}
+
 .button--primary {
     color: #ffffff;
     background-color: #1b1d21;
+}
+
+.button--primary:hover {
+    color: #ffffff;
+    background-color: #6c5dd3;
+}
+
+.button--tertiary {
+    color: #5f75ee;
+    background-color: #ffffff;
 }
